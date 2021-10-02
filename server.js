@@ -57,3 +57,5 @@ app.listen(PORT, () => {
   console.log(`Node server listening on port  ${PORT}`)
   // scrapDepositHistory();
 });
+
+console.log(process.env.STRIPE_SECRET_KEY);
