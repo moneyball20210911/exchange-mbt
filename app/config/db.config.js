@@ -1,3 +1,3 @@
 module.exports = {
-  url: "mongodb://13.58.42.217:27017/Exchange_db"
+  url: "mongodb://localhost:27017/Exchange_db"
 };
