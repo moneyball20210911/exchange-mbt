@@ -134,7 +134,8 @@ router.post(APIENTRY + "/get/payment-list", async (req, res)=>{
 	  const data = [];
 	  for(let v of rows) {
 		const {address, count, rewards, updatedAt} = v;
-		data.push({address, count, rewards, updatedAt})
+		if(Number(count)!==0&&Number(rewards)!==0)
+			data.push({address, count, rewards, updatedAt})
 	  }
 	  return res.json({status:'ok', data})
 	}
